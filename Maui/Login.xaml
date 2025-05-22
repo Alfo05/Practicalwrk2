@@ -1,0 +1,12 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp.Pages.Login"
+             Title="Login">
+             <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
+                <Entry Placeholder="Username" x:Name="UsernameEntry"/>
+                <Entry Placeholder="Password" IsPassword="True" x:Name="PasswordEntry"/>
+                <Button Text="Login" Clicked="OnClickLogin"/>
+
+                <Label Text="Forgot Password?" TextColor="Blue" HorizontalOptions="Center" GestureRecognizers="{Binding ForgotPasswordTap}"/>
+                </VerticalStackLayout>
+</ContentPage>

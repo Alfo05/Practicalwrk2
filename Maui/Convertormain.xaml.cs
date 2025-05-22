@@ -2,7 +2,7 @@ using System;
 
 namespace Maui
 {
-    public class Program
+    public class ConvertorMain
     {
         public static void Main()
         {
