@@ -1,35 +1,20 @@
 using System;
+using Microsoft.Maui.Controls;
 
 namespace Maui
 {
     public abstract class Conversion
     {
         protected string name;
-        protected string defintion;
+        protected string definition;
 
         public Conversion(string name, string definition)
         {
             this.name = name;
-            this.defintion = definition;
+            this.definition = definition;
         }
-
-        public void PrintConversion(string input, string output)
-        {
-            Console.Clear();
-            Console.WriteLine($"{this.name} representation of {input} is {output}");
-            Console.ReadLine();
-        }
-
         public abstract string Change(string input);
-
-        public string GetName()
-        {
-            return this.name;
-        }
-
-        public string GetDefinition()
-        {
-            return this.defintion;
-        }
+        public string GetName() => name;
+        public string GetDefintion() => definition;
     }
 }

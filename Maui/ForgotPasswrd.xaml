@@ -1,0 +1,10 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp.ForgotPasswrd"
+             Title="Password Recovery">
+      <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
+         <Entry x:Name="emailEntry " Placeholder="Email" Keyboard="Email" />
+         <Button Text="Send" Clicked="SendOnClick"/>
+         <Label Text="Enter your email to recover your password"/>
+      </VerticalStackLayout>
+</ContentPage>

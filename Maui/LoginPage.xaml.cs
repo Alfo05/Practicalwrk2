@@ -1,17 +1,21 @@
 ﻿using Microsoft.Maui.Controls;
 namespace Maui
 {
-    public partial class Login : ContentPage
+    public partial class LoginPage : ContentPage
     {
-        public Login()
+        public LoginPage()
         {
             InitializeComponent();
             var tapGesture = new TapGestureRecognizer();
             tapGesture.Tapped += (s, e) =>
             {
-                Navigation.PopAsync(new ForgotPasswrd());
+                Navigation.PushAsync(new ForgotPassword());
             };
             this.FindByName<Label>("ForgotPasswordLabel")?.GestureRecognizers.Add(tapGesture);
+        }
+        private async void OnClickLogin(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Calculator());
         }
     }
     

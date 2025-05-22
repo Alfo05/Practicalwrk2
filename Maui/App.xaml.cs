@@ -1,14 +1,11 @@
-﻿namespace Maui;
+﻿using Maui;
 
 public partial class App : Application
 {
-	public App()
-	{
-		InitializeComponent();
-	}
+    public App()
+    {
+        InitializeComponent();
 
-	protected override Window CreateWindow(IActivationState? activationState)
-	{
-		return new Window(new AppShell());
-	}
+        LoginPage = new NavigationPage(new LoginPage());
+    }
 }
