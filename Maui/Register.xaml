@@ -1,0 +1,13 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MauiApp.Register">
+    <VerticalStackLayout Padding="30" Spacing="25">
+        <Label Text="Sign Up" FontSize="15" FontAttributes="Bold" HorizontalOptions="Center"/>
+        <Entry x:Name="usernameEntry" Placeholder="Username"/>
+        <Entry x:Name="emailEntry" Placeholder="Email" Keyboard="Email">
+        <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True"/>
+        <Entry x:Name="confirmPasswrdEntry" Placeholder="Confirm Password" IsPassword="True"/>
+        <Button Text="Sign Up" Clicked="SignUpOnClick"/>
+        <Label x:Name="messageLabel" TextColor="Green"/> 
+    </VerticalStackLayout>
+</ContentPage>
